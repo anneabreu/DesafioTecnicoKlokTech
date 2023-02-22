@@ -20,6 +20,7 @@ public class BuscarProduto {
         page.acessarTelaInicial("https://www.magazineluiza.com.br/");
     }
 
+    //Buscando um produto
     @When("busca por um {string}")
     public void buscaPorUm(String produto) {
         page.esperarPor(page.getElementos().getPesquisar());
@@ -27,6 +28,7 @@ public class BuscarProduto {
         page.Pesquisar().sendKeys(Keys.ENTER);
     }
 
+    //Verificando resultados da busca
     @Then("acha um produto")
     public void achaUmProduto() {
         page.esperarPor(page.getElementos().getResultado());
@@ -36,18 +38,21 @@ public class BuscarProduto {
         }
     }
 
+    //Busca por produto inexistente
     @Then("não acha um produto")
     public void nãoAchaUmProduto() {
         page.esperarPor(page.getElementos().getResultadoLista());
         Assert.assertEquals(Constantes.nao_encontra_produto, page.ResultadoLista().getText());
     }
 
+    //Busca com caracteres inválidos
     @Then("não retorna resultados")
     public void nãoRetornaResultados() {
         page.esperarPor(page.getElementos().getResultadoLista());
         Assert.assertEquals(Constantes.nao_retorna_resultados, page.ResultadoLista().getText());
     }
 
+    //Seleciona um produto da pagina de resultados
     @And("clica no produto escolhido")
     public void clicaNoProdutoEscolhido() {
         page.esperarPor(page.getElementos().getResultado());
@@ -55,12 +60,14 @@ public class BuscarProduto {
         page.Resultado().get(1).click();
     }
 
+    //Verifica a pagina do produto escolhido
     @Then("o sistema deve exibir a pagina do produto")
     public void oSistemaDeveExibirAPaginaDoProduto() {
         page.esperarPor(page.getElementos().getNote());
         Assert.assertEquals(page.Note().getText(), Constantes.verificar);
     }
 
+    //Busca com filtro
     @And("seleciona uma categoria")
     public void selecionaUmaCategoria() {
         page.esperarPor(page.getElementos().getBusque_por());
