@@ -11,7 +11,7 @@
 
 ## Passo a Passo para Execução
 - Clonar o repositório remoto para uma pasta local.
-- Localizar dentro do repositório a pasta "src"
+- Com sua IDE, localizar dentro do repositório a pasta "src"
 - Localizar dentro da pasta "src" o arquivo "BuscarProtudo.feature"
 - Executar cada cenário ou a feature inteira com o Cucumber
 
