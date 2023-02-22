@@ -17,7 +17,6 @@
 
 ## Observações
 > O projeto foi desenvolvido utilizando a IDE IntelliJ.
-> É necessário que a maquina tenha instalado em suas dependências o JDK, Apache Maven e Cucumber. 
 
 ## Tecnologias Utilizadas
 
