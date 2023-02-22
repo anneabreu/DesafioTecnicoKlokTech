@@ -6,7 +6,10 @@
 
 
 ## Resumo
-> Esse desafio técnico foi elaborado para uma vaga de estágio para QA. Nele foi pedido para que fosse automatizado o seguinte Caso de Teste: Buscar por um produto dentro de um site qualquer e validar o retorno da busca.   
+> Esse desafio técnico foi elaborado para uma vaga de estágio para QA. Nele foi pedido para que fosse automatizado o seguinte Caso de Teste: Buscar por um produto dentro de um grande portal de comércio online e validar o retorno da busca.   
+
+- Site escolhido: Magazine Luiza
+- Link: https://www.magazineluiza.com.br/
 
 
 ## Passo a Passo para Execução
